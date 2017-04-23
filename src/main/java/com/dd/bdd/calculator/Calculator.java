@@ -1,4 +1,4 @@
-package com.czeczotka.bdd.calculator;
+package com.dd.bdd.calculator;
 
 public class Calculator {
 
