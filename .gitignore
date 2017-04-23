@@ -2,3 +2,5 @@ target/*
 .idea/*
 *.iml
 /target/
+debug.log
+allure-report/*
