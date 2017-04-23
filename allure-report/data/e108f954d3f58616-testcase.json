@@ -1,0 +1,116 @@
+{
+  "uid" : "e108f954d3f58616",
+  "name" : "User can see an error if login is incorrect",
+  "title" : "User can see an error if login is incorrect",
+  "time" : {
+    "start" : 1492882547587,
+    "stop" : 1492882553751,
+    "duration" : 6164
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 4
+  },
+  "failure" : null,
+  "description" : {
+    "value" : null,
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "1bd9d76da28153ff",
+    "name" : "Authorization For Mobile VK",
+    "title" : "Authorization for mobile VK"
+  },
+  "steps" : [ {
+    "name" : "Given user is on the login page",
+    "title" : "Given user is on the login page",
+    "time" : {
+      "start" : 1492882547587,
+      "stop" : 1492882552063,
+      "duration" : 4476
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "When user logs in using wrong phone number",
+    "title" : "When user logs in using wrong phone number",
+    "time" : {
+      "start" : 1492882552063,
+      "stop" : 1492882552980,
+      "duration" : 917
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Then user see error message",
+    "title" : "Then user see error message",
+    "time" : {
+      "start" : 1492882552983,
+      "stop" : 1492882553057,
+      "duration" : 74
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "And browser closing",
+    "title" : "And browser closing",
+    "time" : {
+      "start" : 1492882553057,
+      "stop" : 1492882553751,
+      "duration" : 694
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "thread",
+    "value" : "6316@XXXX.main(1)"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "story",
+    "value" : "User can see an error if login is incorrect"
+  }, {
+    "name" : "framework",
+    "value" : "CucumberJVM"
+  }, {
+    "name" : "feature",
+    "value" : "Authorization For Mobile VK"
+  }, {
+    "name" : "suite-name",
+    "value" : "Authorization For Mobile VK"
+  }, {
+    "name" : "host",
+    "value" : "XXXX"
+  } ],
+  "parameters" : [ ]
+}
