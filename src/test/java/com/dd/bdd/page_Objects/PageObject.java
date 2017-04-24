@@ -1,6 +1,7 @@
 package com.dd.bdd.page_Objects;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 public  class PageObject {
 	
@@ -8,6 +9,7 @@ public  class PageObject {
 	
 	public PageObject(WebDriver driver){
 		this.driver = driver;
+		PageFactory.initElements(driver,this);
 	}
 	
 	public LoginPage goToLoginPage(){
@@ -15,7 +17,5 @@ public  class PageObject {
 		return new LoginPage(driver);
 	}
 	
-	public void closeDriver(){
-		driver.quit();
-	}
+	
 }

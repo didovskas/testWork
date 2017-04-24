@@ -1,4 +1,4 @@
-package com.bdd.dd.helpers;
+package com.dd.bdd.helpers;
 
 public class UserData {
 	

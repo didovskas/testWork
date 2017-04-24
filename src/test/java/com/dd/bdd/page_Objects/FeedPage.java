@@ -8,6 +8,9 @@ public class FeedPage extends PageObject {
 		super(driver);		
 	}
 	
+	public String pageUrl = "http://m.vk.com/feed";
+	public String pageTitle = "News";
+	
 	public String getCurrentUrl(){
 		return driver.getCurrentUrl();
 	}

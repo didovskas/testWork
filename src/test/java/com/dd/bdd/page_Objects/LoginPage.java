@@ -1,5 +1,6 @@
 package com.dd.bdd.page_Objects;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,6 +10,9 @@ public class LoginPage extends PageObject {
 	public LoginPage(WebDriver driver) {
 		super(driver);
 	}
+	
+	public String pageUrl = "http://m.vk.com/login";
+	public String pageTitle = "Login | VK";
 	
 	@FindBy(name = "email")
 		private WebElement emailField;
@@ -42,7 +46,15 @@ public class LoginPage extends PageObject {
 		return new FeedPage(driver);
 	}
 	public boolean isErrorMessageDisplayed(){
-	 return	errorMessage.isDisplayed();
+		boolean isDisplayed = true;
+		 
+		 
+		 try {
+			 errorMessage.isDisplayed();
+		 } catch (NoSuchElementException e) {
+			 isDisplayed = false;
+		 }
+		 return isDisplayed;
 	}
 
 }

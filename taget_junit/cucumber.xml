@@ -1,23 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="95.893183">
-<testcase classname="Authorization For Mobile VK" name="User can login, using his email" time="32.733202">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="22.549507">
+<testcase classname="Authorization For Mobile VK" name="User can login, using his email" time="9.405133">
 <system-out><![CDATA[Given user is on the login page.............................................passed
-When user loggin, using his email...........................................passed
-Then user gets on the profile page..........................................passed
-And browser closing.........................................................passed
+When user loggin, using his login didovskas@gmail.com, and password Banan&Nutela.passed
+Then user gets on the profile page and doesnt see error message.............passed
 ]]></system-out>
 </testcase>
-<testcase classname="Authorization For Mobile VK" name="User can login, using his phone number" time="33.174778">
+<testcase classname="Authorization For Mobile VK" name="User can login, using his phone number" time="7.791713">
 <system-out><![CDATA[Given user is on the login page.............................................passed
-When user logs in using his phone number....................................passed
-Then user gets on the profile page..........................................passed
-And browser closing.........................................................passed
+When user loggin, using his login +380953579313, and password Banan&Nutela..passed
+Then user gets on the profile page and doesnt see error message.............passed
 ]]></system-out>
 </testcase>
-<testcase classname="Authorization For Mobile VK" name="User can see an error if login is incorrect" time="29.985203">
+<testcase classname="Authorization For Mobile VK" name="User can see an error if login is incorrect" time="5.352661">
 <system-out><![CDATA[Given user is on the login page.............................................passed
-When user logs in using wrong phone number..................................passed
-Then user see error message.................................................passed
-And browser closing.........................................................passed
+When user loggin, using his login +380953579313, and password Banan.........passed
+Then user steel on the login page and see error message.....................passed
 ]]></system-out>
 </testcase>
 </testsuite>
