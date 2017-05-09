@@ -13,6 +13,7 @@
         <!-- Needed for allure-maven-plugin to specify report version -->
         <allure.version>1.5.2</allure.version>
         <aspectj.version>1.7.4</aspectj.version>
+        <ANDROID_HOME>/home/denis/Android/Sdk</ANDROID_HOME>
     </properties>
 
     <dependencies>
