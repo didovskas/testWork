@@ -38,8 +38,5 @@ public class AuthorizationSteps {
 		Assert.assertEquals(feedPage.pageTitle, driver.getTitle());
 	}
 	
-	@After
-	public void driverQuit(){
-		driver.quit();
-	}
+	
 }

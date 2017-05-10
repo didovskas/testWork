@@ -6,262 +6,70 @@
         "before": [
           {
             "result": {
-              "duration": 45303921349,
+              "duration": 41485939518,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.initMobileWebDribver()"
+              "location": "HooksForApp.initMobileWebDribver()"
             }
           }
         ],
         "line": 5,
         "name": "User can login, using his email",
         "description": "",
-        "id": "authorization-for-mobile-vk;user-can-login,-using-his-email",
-        "after": [
-          {
-            "result": {
-              "duration": 2781142011,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AuthorizationSteps.driverQuit()"
-            }
-          }
-        ],
+        "id": "test-for-application;user-can-login,-using-his-email",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2240365165,
+              "duration": 117379797,
               "status": "passed"
             },
             "line": 6,
-            "name": "user is on the login page",
+            "name": "user is on the main page",
             "match": {
-              "location": "AuthorizationSteps.user_is_on_the_login_page()"
+              "location": "TestAppSteps.user_is_on_the_main_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3884007129,
+              "duration": 6128892410,
               "status": "passed"
             },
             "line": 7,
-            "name": "user loggin, using his login LOGIN, and password PASSWORD",
+            "name": "user send his text",
             "match": {
-              "arguments": [
-                {
-                  "val": "LOGIN",
-                  "offset": 29
-                },
-                {
-                  "val": "PASSWORD",
-                  "offset": 49
-                }
-              ],
-              "location": "AuthorizationSteps.user_loggin_using_his_email(String,String)"
+              "location": "TestAppSteps.user_send_his_text()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 197736225,
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[News]\u003e but was:\u003c[Вход | ВКонтакте]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat com.dd.bdd.steps.AuthorizationSteps.user_gets_on_the_feed_page(AuthorizationSteps.java:38)\n\tat ✽.Then user gets on the profile page and doesnt see error message( AuthorizationForMobileVK.feature:8)\n",
-              "status": "failed"
+              "duration": 652207597,
+              "status": "passed"
             },
             "line": 8,
-            "name": "user gets on the profile page and doesnt see error message",
+            "name": "user can see his text on result page",
             "match": {
-              "location": "AuthorizationSteps.user_gets_on_the_feed_page()"
+              "location": "TestAppSteps.user_can_see_his_text_on_result_page()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 4,
-            "name": "@mobile"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 18552263066,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.initMobileWebDribver()"
-            }
-          }
-        ],
-        "line": 11,
-        "name": "User can login, using his phone number",
-        "description": "",
-        "id": "authorization-for-mobile-vk;user-can-login,-using-his-phone-number",
-        "after": [
-          {
-            "result": {
-              "duration": 2855118284,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AuthorizationSteps.driverQuit()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2868472879,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user is on the login page",
-            "match": {
-              "location": "AuthorizationSteps.user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3876861912,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user loggin, using his login LOGIN, and password PASSWORD",
-            "match": {
-              "arguments": [
-                {
-                  "val": "LOGIN",
-                  "offset": 29
-                },
-                {
-                  "val": "PASSWORD",
-                  "offset": 49
-                }
-              ],
-              "location": "AuthorizationSteps.user_loggin_using_his_email(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 183348233,
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[News]\u003e but was:\u003c[Вход | ВКонтакте]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat com.dd.bdd.steps.AuthorizationSteps.user_gets_on_the_feed_page(AuthorizationSteps.java:38)\n\tat ✽.Then user gets on the profile page and doesnt see error message( AuthorizationForMobileVK.feature:14)\n",
-              "status": "failed"
-            },
-            "line": 14,
-            "name": "user gets on the profile page and doesnt see error message",
-            "match": {
-              "location": "AuthorizationSteps.user_gets_on_the_feed_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 10,
-            "name": "@mobile"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 17351167120,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.initMobileWebDribver()"
-            }
-          }
-        ],
-        "line": 18,
-        "name": "User can see an error if login is incorrect",
-        "description": "",
-        "id": "authorization-for-mobile-vk;user-can-see-an-error-if-login-is-incorrect",
-        "after": [
-          {
-            "result": {
-              "duration": 2701006702,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AuthorizationSteps.driverQuit()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2040797827,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user is on the login page",
-            "match": {
-              "location": "AuthorizationSteps.user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4119357094,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user loggin, using his login LOGIN, and password WRONGPASSWORD",
-            "match": {
-              "arguments": [
-                {
-                  "val": "LOGIN",
-                  "offset": 29
-                },
-                {
-                  "val": "WRONGPASSWORD",
-                  "offset": 49
-                }
-              ],
-              "location": "AuthorizationSteps.user_loggin_using_his_email(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 35886619,
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Login | VK]\u003e but was:\u003c[Вход | ВКонтакте]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat com.dd.bdd.steps.AuthorizationSteps.user_see_error_message(AuthorizationSteps.java:31)\n\tat ✽.Then user steel on the login page and see error message( AuthorizationForMobileVK.feature:21)\n",
-              "status": "failed"
-            },
-            "line": 21,
-            "name": "user steel on the login page and see error message",
-            "match": {
-              "location": "AuthorizationSteps.user_see_error_message()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 17,
-            "name": "@mobile"
           }
         ]
       }
     ],
-    "name": "Authorization For Mobile VK",
+    "name": "Test for application",
     "description": "",
-    "id": "authorization-for-mobile-vk",
+    "id": "test-for-application",
     "keyword": "Feature",
-    "uri": " AuthorizationForMobileVK.feature"
+    "uri": "MobileApp.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@mobileApp"
+      }
+    ]
   }
 ]

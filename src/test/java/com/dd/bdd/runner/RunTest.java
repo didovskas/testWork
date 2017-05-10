@@ -9,8 +9,7 @@ import org.junit.runner.RunWith;
 		format = { "pretty", "html:target/cucumber", "json:target_json/cucumber.json", "junit:taget_junit/cucumber.xml" },
         features = "src/test/resources/cucumber",
         glue = "com.dd.bdd.steps",
-        tags = "@mobile"
+        tags = "@mobileApp"
 )
 public class RunTest {
 }
-
